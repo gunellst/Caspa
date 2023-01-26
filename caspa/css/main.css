@@ -1,0 +1,351 @@
+@font-face {
+  font-family: "CoHeadline";
+  src: url(/assets/fonts/CoHeadlineRegular.otf) format("opentype");
+}
+@font-face {
+  font-family: "San Francisco";
+  src: url(/assets/fonts/SanFranciscoFont.otf) format("opentype");
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 14px 14px;
+  background-color: #6F6FBF;
+}
+header .header-content {
+  display: flex;
+  justify-content: space-between;
+}
+header .header-content .header-left_side span {
+  font-family: "San Francisco", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+  margin-right: 24px;
+}
+header .header-content .header-left_side a {
+  text-decoration: none;
+  margin-right: 10px;
+}
+header .header-content .header-right_side {
+  display: flex;
+  gap: 16px;
+}
+header .header-content .header-right_side a {
+  text-decoration: none;
+  font-family: "San Francisco", sans-serif;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 24px;
+  font-style: bold;
+}
+
+.contact {
+  margin: 0 auto;
+}
+.contact .contact-row {
+  justify-content: space-between;
+  padding: 12px 0;
+}
+.contact .contact-row .contact-phone {
+  font-family: "CoHeadline", sans-serif;
+  color: #6F6FBF;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.contact .contact-row .contact-phone .number {
+  font-size: 25px;
+  line-height: 25px;
+}
+.contact .contact-row .contact-phone .text {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -3%;
+}
+.contact .contact-row .contact-logo {
+  display: flex;
+  justify-content: center;
+}
+.contact .contact-row .contact-profile {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+nav {
+  margin: 0 auto;
+  background-color: #F1F1F8;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #6F6FBF;
+  font-family: "San Francisco", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.banner-field {
+  display: flex;
+  padding-top: 127px;
+}
+.banner-field .banner-content {
+  padding: 30px 0;
+}
+.banner-field .banner-content h1 {
+  font-family: "CoHeadline", sans-serif;
+  font-size: 46px;
+  line-height: 55px;
+  letter-spacing: 0.2px;
+  color: #222222;
+}
+.banner-field .banner-content p {
+  font-family: "San Francisco", sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  margin-top: 24px;
+}
+.banner-field .banner-content .btn-dark {
+  margin-top: 8px;
+  padding: 16px 24px;
+  border-radius: 100px;
+}
+.banner-field .banner-content .btn-dark span {
+  font-family: "San Francisco", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+}
+.banner-field .banner-image {
+  margin-left: 60px;
+}
+
+.slider {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 16px;
+}
+.slider span {
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background-color: #F1F1F8;
+}
+.slider :nth-child(2) {
+  background-color: black;
+}
+
+.banner-button {
+  margin-top: 80px;
+  padding: 24px 0;
+  gap: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-button .btn {
+  border-radius: 99px;
+}
+.banner-button .btn span {
+  font-family: "San Francisco", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-left: 20px;
+  margin-top: 16px;
+}
+.banner-button .btn img {
+  margin: 4px;
+}
+
+.help-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.help-button button {
+  border-radius: 99px;
+  padding: 12px 12px 12px 32px;
+}
+.help-button button span {
+  font-family: "San Francisco", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+.help-button button img {
+  margin-right: 12px;
+}
+
+.contact-button {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 90px;
+}
+.contact-button a {
+  text-decoration: none;
+}
+.contact-button button {
+  border-radius: 99px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  padding: 22px 32px;
+}
+.contact-button button span {
+  font-family: "San Francisco", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 12px;
+}
+
+.appstore {
+  margin-top: 17px;
+  background: linear-gradient(100.93deg, #F1F1F9 0%, #FEF9F9 100%);
+}
+.appstore .appstore-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.appstore .appstore-field .appstore-content {
+  margin-top: 100px;
+}
+.appstore .appstore-field .appstore-content h2 {
+  font-family: "CoHeadline", sans-serif;
+  font-size: 36px;
+  line-height: 120%;
+  color: #222222;
+  letter-spacing: 0.2px;
+  text-align: center;
+}
+.appstore .appstore-field .appstore-button {
+  margin-top: 32px;
+  display: flex;
+  gap: 10px;
+}
+.appstore .appstore-field .appstore-button a {
+  text-decoration: none;
+}
+
+.payment-content {
+  margin-top: 200px;
+  text-align: center;
+}
+.payment-content h2 {
+  font-family: "CoHeadline", sans-serif;
+  font-size: 36px;
+  line-height: 43px;
+}
+
+.payment-topic-row {
+  justify-content: space-between;
+  padding-top: 64px;
+}
+.payment-topic-row .topic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.payment-topic-row p {
+  margin-top: 16px;
+  font-family: "San Francisco", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #222222;
+  text-align: center;
+  font-weight: bold;
+}
+
+.tariff-field {
+  background-color: #F1F1F9;
+  margin-top: 184px;
+  padding: 50px;
+  border-radius: 24px;
+}
+.tariff-field .tariff-title {
+  text-align: center;
+}
+.tariff-field .tariff-title p {
+  margin-top: 16px;
+  font-family: "San Francisco", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2F313E;
+}
+.tariff-field .tariff-row {
+  margin: 35px 50px 35px 62px;
+}
+.tariff-field .tariff-row .tariff-weight {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 32px 32px 50px;
+  gap: 36px;
+}
+.tariff-field .tariff-row .tariff-weight span {
+  font-family: "CoHeadline", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+.tariff-field .tariff-row .tariff-price {
+  border-radius: 12px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0 32px;
+  gap: 36px;
+  text-align: center;
+}
+.tariff-field .tariff-row .tariff-price h1, .tariff-field .tariff-row .tariff-price span {
+  font-family: "CoHeadline", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  margin-bottom: 0;
+}
+.tariff-field .tariff-row .normal {
+  background-color: #FFFFFF;
+  padding: 24px 0 32px;
+}
+.tariff-field .tariff-row .normal h1 {
+  color: #6F6FBF;
+}
+.tariff-field .tariff-row .liquid {
+  background: rgba(255, 255, 255, 0.5);
+}
+.tariff-field .tariff-row .liquid h1 {
+  color: #DDB973;
+}
+.tariff-field .tariff-content {
+  background-color: #FFFFFF;
+  padding: 24px 48px;
+}
+.tariff-field .tariff-content span {
+  font-family: "San Francisco", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2F313E;
+}/*# sourceMappingURL=main.css.map */

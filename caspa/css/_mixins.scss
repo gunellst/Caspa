@@ -1,0 +1,11 @@
+@mixin display {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin pricetext {
+    font-family: $extra-font;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
